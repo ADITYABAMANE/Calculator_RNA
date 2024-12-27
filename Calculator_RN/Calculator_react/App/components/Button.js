@@ -32,6 +32,9 @@ const styles = StyleSheet.create({
   },
   buttonAccent: {
     backgroundColor: "#f09a36"
+  },
+  buttonEqual: {
+    backgroundColor: "green"  
   }
 });
 
@@ -48,6 +51,10 @@ export default ({ onPress, text, size, theme }) => {
     textStyles.push(styles.textSecondary);
   } else if (theme === "accent") {
     buttonStyles.push(styles.buttonAccent);
+  }
+
+  if (text === "=") {  // Check if the button text is "=" and apply the green background
+    buttonStyles.push(styles.buttonEqual);
   }
 
   return (
