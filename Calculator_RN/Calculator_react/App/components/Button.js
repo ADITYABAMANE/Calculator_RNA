@@ -53,7 +53,7 @@ export default ({ onPress, text, size, theme }) => {
     buttonStyles.push(styles.buttonAccent);
   }
 
-  if (text === "=") {  // Check if the button text is "=" and apply the green background
+  if (text === "=") {  
     buttonStyles.push(styles.buttonEqual);
   }
 
